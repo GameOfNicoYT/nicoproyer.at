@@ -1,0 +1,745 @@
+/*--------------- [GENERAL] ---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------- [ERROR] ---------------*/
+
+#sizeError {
+    display: none;
+}
+
+
+
+/*--------------- [HEADER] ---------------*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.brand-title a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.brand-title a:hover {
+    color: rgb(189, 184, 184);
+}
+
+.brand-title::before {
+    content: " ";
+    position: absolute;
+    bottom: 7.5px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 130px;
+
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.language {
+    position: relative;
+    height: 30px;
+    top: -1rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.language li {
+    list-style: none;
+    height: 30px;
+}
+
+.language ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+.language li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    height: 30px;
+}
+
+@media (max-width: 275px) {
+    body {
+        background-color: white;
+    }
+
+    #content {
+        display: none;
+    }
+
+    #sizeError {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .language {
+        right: -25px;
+        margin-top: 7.5px;
+    }
+
+    .brand-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .language {
+        margin-right: 10vh;
+        top: -50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+#img_ger_flag {
+    margin: 10px;
+}
+
+/*--------------- [FOOTER] ---------------*/
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Footer {
+    background-color: #3f3c3c;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0;
+    background-color: #3f3c3c;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footerCol {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.footerCol h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footerCol h4::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.helpError {
+    margin-left: -40px;
+}
+
+.footerCol ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+    margin-left: 0px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.footerCol ul.clickable li a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+
+
+.footerCol .socialLinks a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff33;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.footerCol .socialLinksHover a {
+    transition: all 0.5s ease;
+
+}
+
+.footerCol .socialLinks a:hover {
+    color: #00000099;
+    background-color: white;
+}
+
+
+
+
+
+
+
+/*responsive*/
+
+@media(max-width: 767px) {
+    .footerCol {
+        width: 100%;
+        margin-bottom: 0 15px;
+
+    }
+}
+
+@media(max-width: 574px) {
+    .footerCol {
+        width: 100%;
+    }
+}
+
+/*--------------- [404] ---------------*/
+
+body {
+    background-color: #3f3c3c;
+    color: #ffffff;
+}
+
+.Button404 {
+    margin-top: 25px;
+}
+
+#body_404 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    font-size: 1rem;
+}
+
+
+/*--------------- [/index.html] ---------------*/
+
+
+
+main {
+
+    width: 100%;
+    background-color: #4f4f4f;
+}
+
+.greetingImageWithText {
+    position: relative;
+    text-align: center;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+.greetingImageWithText_TEXT {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-transform: capitalize;
+
+}
+
+#greetingImageWithText_CSS {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+#greetingImageWithText_CSS_TEXT {
+    position: absolute;
+    bottom: 20.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-transform: capitalize;
+}
+
+#greetingImageWithText_CSS:hover {
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+}
+
+#greetingImageWithText_arrow {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    height: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-transform: capitalize;
+}
+
+.greetingImageWithText_TEXT p {
+    font-size: 30px;
+}
+
+.introduction {
+    display: flex;
+    height: 100vh;
+}
+
+.introductionTextLeft {
+    width: 45%;
+    background-color: #3f3f3f;
+}
+
+.introductionTextRight {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 50vh;
+    transform: translate(0%, -50%);
+}
+
+.introductionTextRight p {
+    font-size: 20px;
+}
+
+.introductionTextLeftCard img {
+    width: 50%;
+    transform: translate(50%, 10%);
+}
+
+.introductionTextLeftCard {
+    width: 50%;
+    height: 65%;
+    background-color: rgba(146, 146, 146, 0.897);
+    transform: translate(115%, 30%);
+    box-shadow: -5px 5px 5px rgba(90, 90, 90, 0.8);
+}
+
+.introductionTextLeftCard h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.introductionTextLeftCard h1::before {
+    content: " ";
+    height: 2px;
+    width: 212px;
+    position: absolute;
+    background-color: aqua;
+    top: 300px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .greetingImageWithText_TEXT {
+        bottom: 15%;
+        font-size: 1rem;
+    }
+
+    #greetingImageWithText_CSS {
+        bottom: 15%;
+    }
+
+    #greetingImageWithText_CSS_TEXT {
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 1499px) {
+    .introductionTextLeftCard h1::before {
+        bottom: 300px;
+    }
+
+    .introductionTextLeftCard {
+        height: 50%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .introductionTextLeftCard h1::before {
+        bottom: 325px;
+    }
+}
+
+@media (max-width: 900px) {
+    .greetingImageWithText_TEXT {
+        width: 80%;
+    }
+
+    #greetingImageWithText_CSS {
+        bottom: 15%;
+    }
+
+    #greetingImageWithText_CSS:hover {
+        bottom: 12%
+    }
+}
+
+@media (max-width: 650px) {
+    .greetingImageWithText_TEXT h1 {
+        font-size: 2rem;
+    }
+
+    .greetingImageWithText_TEXT p {
+        font-size: 1.5rem;
+    }
+
+    #greetingImageWithText_CSS {
+        bottom: 22%;
+    }
+
+    #greetingImageWithText_CSS:hover {
+        bottom: 18%;
+    }
+
+    .introduction {
+        display: block;
+    }
+
+    .introductionTextLeft {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .introductionTextLeftCard {
+        transform: translate(50%, 10%);
+        height: 80%;
+    }
+
+    .introductionTextLeftCard h1::before {
+        width: 50%;
+        transform: translate(-5%,6000%);
+    }
+
+    .introductionTextRight {
+        width: 90%;
+        transform: translate(0,-95%);
+        height: 450px;
+        margin-right: 5px;
+    }
+
+    .greetingImageWithText {
+        display: none;
+    }
+}
+
+@media (min-width: 1500px) {
+    .introductionTextLeftCard h1::before {
+        bottom: 450px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .introductionTextLeftCard h1::before {
+        bottom: 400px;
+    }
+
+}
+
+@media (min-width: 2000px) {
+    .introductionTextLeftCard h1::before {
+        bottom: 380px;
+    }
+}
+
+
+@media (min-width: 1200px) {}
+
+.introductionTextLeftCard h4 {
+    text-align: center;
+}
+
+.introductionTextLeftCardLink {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, 150%);
+    width: 100%;
+}
+
+.introductionTextLeftCardLinkSingle {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff33;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+/*--------------- [/kontakt.html] ---------------*/
+
+body {
+    background-color: #4f4f4f;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    transform: translate(75%);
+    width: 40%;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+#formMessage {
+    height: 50px;
+    transform: translate(0, 40px);
+}
+
+#formMessageDiv {
+    margin-top: -40px;
+}
+
+.form button {
+    transform: translate(150%);
+    margin-top: 50px;
+}
+
+/*--------------- [CONTEXT MENU] ---------------*/
+
+.datenschutz {
+    text-align: center;
+}
+
+.datenschutz h1 {
+    margin-bottom: 50px;
+}
+
+.datenschutz p {
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*--------------- [CONTEXT MENU] ---------------*/
+
+#context-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    background: #494949;
+    transform: scale(0);
+    transform-origin: top left;
+    margin-top: 50px;
+    margin-left: 2.5px;
+}
+
+#context-menu h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+#context-menu h1::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 145px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 150px;
+    margin-top: 5px;
+}
+
+#context-menu.active {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+#context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+}
+
+.item-title {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+}
+
+
+#item-datasafety-lock-closed {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+#item-datasafety-lock-open {
+    transition: all 0.5s ease;
+}
+
+#context-menu-datenschutz:hover #item-datasafety-lock-closed {
+    display: block;
+}
+
+#context-menu-datenschutz:hover #item-datasafety-lock-open {
+    display: none;
+}
+
+#context-menu .item:hover {
+    background: #555;
+}
+
+#context-menu .item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#context-menu .item i {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#context-menu hr {
+    margin: 2px;
+    border-color: #555;
+}

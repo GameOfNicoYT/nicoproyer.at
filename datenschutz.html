@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz | nicoproyer.at</title>
+    <link rel="shortcut icon" href="/img/picture_png.png">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://kit.fontawesome.com/9a89a60d4e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------------------------------------- [CONTEXT MENU] ----------------------------------------- -->
+    <div id="context-menu">
+        <div class="item-title" id="context-menu-title">
+            <i></i>
+            <h1>Schnellwahl:</h1>
+        </div>
+        <div class="item" id="context-menu-home" onmouseleave="contextMenuHome_notActive()"
+            onmouseenter="contextMenuHome_active()">
+            <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </div>
+        <div class="item" id="context-menu-contact" onmouseleave="contextMenuContact_notActive()"
+            onmouseenter="contextMenuContact_active()">
+            <a href="/kontakt.html"><i class="fa-solid fa-address-book"></i>Kontakt</a>
+        </div>
+        <div class="item" id="context-menu-link" onmouseleave="contextMenuLinks_notActive()"
+            onmouseenter="contextMenuLinks_active()">
+            <a href="/link.html"><i class="fa-solid fa-link"></i>Links</a>
+        </div>
+        <div id="context-menu-datenschutz" class="item">
+            <a id="item-datasafety-lock-open" href="/datenschutz.html"><i
+                    class="fa-solid fa-lock-open"></i>Datenschutz</a>
+            <a id="item-datasafety-lock-closed" href="/datenschutz.html"><i class="fa-solid fa-lock"></i>Datenschutz</a>
+        </div>
+    </div>
+
+    <div>
+
+
+
+        <!-- ----------------------------------------- [DEVICE ERROR] ----------------------------------------- -->
+        <h1 id="sizeError">
+            Error, your Device doesn't support the website.
+            Error: Width is not supported. Please get a device, with a larger display.
+        </h1>
+
+        <!-- ----------------------------------------- [NAVBAR] ----------------------------------------- -->
+        <div id="content">
+            <nav class="navbar">
+                <div class="brand-title"><a href="index.html">nicoproyer.at</a></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="navbar-links"><a href="/index.html">Startseite</a></li>
+                        <li class="navbar-links"><a href="/datenschutz.html">Datenschutz</a></li>
+                        <li class="navbar-links"><a href="/kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ----------------------------------------- [MAIN] ----------------------------------------- -->
+
+        <main>
+            <div class="datenschutz">
+                <h1>Datenschutz</h1>
+                <p>
+                    Alle von Ihnen Angegebenen Daten werden nicht an Drittanbieter weitergeleitet. Die Daten bleiben bei
+                    dem
+                    Server Inhaber/Betreiber und werden nicht für Illegale gründe verwendet.
+                    Daten
+                    werden nach dem Lesen der Anfrage innerhalb von 30 Tagen gelöscht, außer die Daten werden länger
+                    benötigt. Dabei werden Sie gefragt ob Sie uns erlauben die Daten länger zu behalten. Nach 30 Tagen
+                    Inaktivität werden alle Daten* von Verteilerzentren und Servern gelöscht.
+                </p>
+                <p>
+                    Weitere Infos zum Generellem Datenschutz finden Sie unter
+                </p>
+                <p>
+                    <a
+                        href="https://www.dsb.gv.at/recht-entscheidungen/gesetze-in-oesterreich.html">www.dsb.gv.at/recht-entscheidungen/gesetze-in-oesterreich.html</a>
+                </p>
+            </div>
+        </main>
+
+        <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
+        <footer class="Footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="footerCol">
+                        <h4>Hilfe</h4>
+                        <ul class="clickable">
+                            <li><a href="mailto: info@nicoproyer.at">Support</a></li>
+                            <li><a href="/kontakt.html">Kontakt</a></li>
+                        </ul>
+                        <h4>Impressum</h4>
+                        <ul class="clickable">
+                            <li><a href="/datenschutz.html">© nicoproyer.at
+                                    2019-2023</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCol">
+                        <h4>Folge mir</h4>
+                        <div class="socialLinks">
+                            <div class="socialLinksHover">
+                                <a href="https://www.instagram.com/gameofnicoyt" target="_blank"
+                                    rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@nicoproyer" target="_blank"
+                                    rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
+                                    target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+</body>
+
+</html>
