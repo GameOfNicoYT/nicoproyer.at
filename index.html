@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-DE">
 
 <head>
+    <meta http-equiv="refresh" content="0; URL=./under-construction.html">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite | nicoproyer.at</title>
+    <meta name="keyword"
+        content="nicoproyer, nicoproyer.at, GameOfNicoYT, GameOfNico, GameOfNico_snap, GameOfNico_SNAP, gameofnico_snap">
+    </meta>
     <link rel="shortcut icon" href="/img/picture_png.png">
     <link rel="stylesheet" href="/index.css">
     <script src="/index.js" defer></script>
-    <meta name="description" content="Willkommen auf meiner Homepage, wo du viele Projekte von mir sehen kannst. Sowie auch etwas über mich erfährst.">
+    <meta name="description"
+        content="Willkommen auf meiner Homepage, wo du viele Projekte von mir sehen kannst. Sowie auch etwas über mich erfährst.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7273122961637338"
+        crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7273122961637338"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9a89a60d4e.js" crossorigin="anonymous"></script>
+
+    <!-- ------------------------------ GOOGLE AD & ANALYTICS ------------------------------ -->
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-238968240-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-238968240-1');
+    </script>
+
 </head>
 
 <body>
@@ -27,7 +50,7 @@
         </div>
         <div class="item" id="context-menu-home" onmouseleave="contextMenuHome_notActive()"
             onmouseenter="contextMenuHome_active()">
-            <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="https://www.nicoproyer.at"><i class="fa-solid fa-house"></i>Home</a>
         </div>
         <div class="item" id="context-menu-contact" onmouseleave="contextMenuContact_notActive()"
             onmouseenter="contextMenuContact_active()">
@@ -58,7 +81,7 @@
         <div id="content">
             <nav class="navbar">
                 <div class="brand-title"><a href="index.html">nicoproyer.at</a></div>
-                <a href="#" class="toggle-button">
+                <a href="#" onclick="toogleNavbar()" class="toggle-button">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -71,114 +94,123 @@
                     </ul>
                 </div>
             </nav>
-        </div>
 
-        <!-- ----------------------------------------- [MAIN CONTENT] ----------------------------------------- -->
 
-        <main>
+            <!-- ----------------------------------------- [MAIN CONTENT] ----------------------------------------- -->
 
-            <!-- ----------------------------------------- [GREETING] ----------------------------------------- -->
-            <div class="greetingImageWithText">
-                <img class="banner_img" src="/img/Banner_800w.png"
-                    alt="Ein Banner, mit 12 Gesichtern, die Nico ähnlich sehen"
-                    srcset="/img/banner_480w.png 480w, /img/banner_800w.png 800w,"
-                    sizes="(max-width: 600px) 480px, 800px">
-                <div class="greetingImageWithText_TEXT">
-                    <h1>Hallo, ich heiße Nico,</h1>
-                    <p>schön dich kennen zu lernen!</p>
+            <main>
+
+                <!-- ----------------------------------------- [Datasafety] ----------------------------------------- -->
+                <div style="background:aqua; border-radius: 50%; width: 5rem; height: 5rem; position:absolute; right: 10px; bottom: 10px;"
+                    class="datasafety">
+                    <a href="./datenschutz.html"><img
+                            style="width: 4rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                            src="/img/Fingerprint.png" alt="Fingerabdruck"></a>
                 </div>
-                <a id="greetingImageWithText_CSS" href="#main_content"><i id="greetingImageWithText_arrow"
-                        class="fa-solid fa-angles-down fa-2xl"></i></a>
-                <p id="greetingImageWithText_CSS_TEXT">RUNTERSCROLLEN</p>
-            </div>
 
-            <div id="main_content">
 
-                <!-- ----------------------------------------- [TEXT] ----------------------------------------- -->
+                <!-- ----------------------------------------- [GREETING] ----------------------------------------- -->
+                <div class="greetingImageWithText">
+                    <img class="banner_img" src="/img/Banner_800w.png"
+                        alt="Ein Banner, mit 12 Gesichtern, die Nico ähnlich sehen"
+                        srcset="/img/banner_480w.png 480w, /img/banner_800w.png 800w,"
+                        sizes="(max-width: 600px) 480px, 800px">
+                    <div class="greetingImageWithText_TEXT">
+                        <h1>Hallo, ich heiße Nico,</h1>
+                        <p>schön dich kennen zu lernen!</p>
+                    </div>
+                    <a id="greetingImageWithText_CSS" href="#main_content"><i id="greetingImageWithText_arrow"
+                            class="fa-solid fa-angles-down fa-2xl"></i></a>
+                    <p id="greetingImageWithText_CSS_TEXT">RUNTERSCROLLEN</p>
+                </div>
 
-                <div class="introduction">
-                    <div class="introductionTextLeft">
-                        <div class="introductionTextLeftCard">
-                            <img src="/img/picture_png.png" alt="Ein Bild von einer Nico ähnlich sehenden Figur.">
-                            <h1>Nico Proyer</h1>
-                            <h4>Schüler</h2>
-                                <div class="introductionTextLeftCardLink">
-                                    <a class="introductionTextLeftCardLinkSingle"
-                                        href="https://www.instagram.com/gameofnicoyt" target="_blank"
-                                        rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
-                                    <a class="introductionTextLeftCardLinkSingle"
-                                        href="https://www.tiktok.com/@nicoproyer" target="_blank"
-                                        rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
-                                    <a class="introductionTextLeftCardLinkSingle"
-                                        href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
-                                        target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
-                                </div>
+                <div id="main_content">
+
+                    <!-- ----------------------------------------- [TEXT] ----------------------------------------- -->
+
+                    <div class="introduction">
+                        <div class="introductionTextLeft">
+                            <div class="introductionTextLeftCard">
+                                <img src="/img/picture_png.png" alt="Ein Bild von einer Nico ähnlich sehenden Figur.">
+                                <h1>Nico Proyer</h1>
+                                <h4>Schüler</h2>
+                                    <div class="introductionTextLeftCardLink">
+                                        <a class="introductionTextLeftCardLinkSingle"
+                                            href="https://www.instagram.com/gameofnicoyt" target="_blank"
+                                            rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+                                        <a class="introductionTextLeftCardLinkSingle"
+                                            href="https://www.tiktok.com/@nicoproyer" target="_blank"
+                                            rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
+                                        <a class="introductionTextLeftCardLinkSingle"
+                                            href="https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
+                                            target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="introductionTextRight">
+                            <h1>
+                                Willkommen!
+                            </h1>
+
+                            <p>
+                                Hi, mein Name lautet Nico und ich wohne im schönen Österreich, um genauer zu sein in der
+                                Steiermark. Ich interessiere
+                                mich sehr, für die Elektrotechnik, Informatik und Robotik. Meine Hobbys sind kleine
+                                Programme,
+                                oder
+                                Websiten wie diese zu Programmieren, und live im Internet zugänglich zu machen.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="introductionTextRight">
-                        <h1>
-                            Willkommen!
-                        </h1>
-
-                        <p>
-                            Hi, mein Name lautet Nico und ich wohne im schönen Österreich, um genauer zu sein in der
-                            Steiermark. Ich interessiere
-                            mich sehr, für die Elektrotechnik, Informatik und Robotik. Meine Hobbys sind kleine
-                            Programme,
-                            oder
-                            Websiten wie diese zu Programmieren, und live im Internet zugänglich zu machen.
-                        </p>
-                    </div>
                 </div>
 
-            </div>
 
+            </main>
 
-        </main>
+            <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
+            <footer class="Footer">
 
-        <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
-        <footer class="Footer">
-
-            <div class="container">
-                <div class="row">
-                    <div class="footerCol">
-                        <h4>Hilfe</h4>
-                        <ul class="clickable">
-                            <li><a href="mailto: info@nicoproyer.at">Support</a></li>
-                            <li><a href="/kontakt.html">Kontakt</a></li>
-                        </ul>
-                        <h4>Impressum</h4>
-                        <ul class="clickable">
-                            <li><a href="/datenschutz.html">© nicoproyer.at
-                                    2019-2023</a></li>
-                        </ul>
-                        <h4>Seiten</h4>
-                        <ul class="clickable">
-                            <li><a href="/index.html">Startseite</a></li>
-                            <li><a href="/kontakt.html">Kontakt</a></li>
-                            <li><a href="/datenschutz.html">Datenschutz</a></li>
-                            <li><a href="/link.html">Links</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerCol">
-                        <h4>Folge mir</h4>
-                        <div class="socialLinks">
-                            <div class="socialLinksHover">
-                                <a href="https://www.instagram.com/gameofnicoyt" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/@nicoproyer" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
-                                <a href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
-                                    target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="footerCol">
+                            <h4>Hilfe</h4>
+                            <ul class="clickable">
+                                <li><a href="mailto: info@nicoproyer.at">Support</a></li>
+                                <li><a href="/kontakt.html">Kontakt</a></li>
+                            </ul>
+                            <h4>Impressum</h4>
+                            <ul class="clickable">
+                                <li><a href="/datenschutz.html">© nicoproyer.at
+                                        2019-2023</a></li>
+                            </ul>
+                            <h4>Seiten</h4>
+                            <ul class="clickable">
+                                <li><a href="/index.html">Startseite</a></li>
+                                <li><a href="/kontakt.html">Kontakt</a></li>
+                                <li><a href="/datenschutz.html">Datenschutz</a></li>
+                                <li><a href="/link.html">Links</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerCol">
+                            <h4>Folge mir</h4>
+                            <div class="socialLinks">
+                                <div class="socialLinksHover">
+                                    <a href="https://www.instagram.com/gameofnicoyt" target="_blank"
+                                        rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/@nicoproyer" target="_blank"
+                                        rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
+                                    <a href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
+                                        target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </footer>
-
+            </footer>
+        </div>
     </div>
 </body>
 

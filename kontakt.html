@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="refresh" content="0; URL=./under-construction.html">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,20 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://kit.fontawesome.com/9a89a60d4e.js" crossorigin="anonymous"></script>
+
+    <!-- ------------------------------ GOOGLE AD & ANALYTICS ------------------------------ -->
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-238968240-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-238968240-1');
+    </script>
+
 </head>
 
 <body>
@@ -26,7 +41,7 @@
         </div>
         <div class="item" id="context-menu-home" onmouseleave="contextMenuHome_notActive()"
             onmouseenter="contextMenuHome_active()">
-            <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="https://www.nicoproyer.at"><i class="fa-solid fa-house"></i>Home</a>
         </div>
         <div class="item" id="context-menu-contact" onmouseleave="contextMenuContact_notActive()"
             onmouseenter="contextMenuContact_active()">
@@ -77,25 +92,25 @@
         <main>
             <div class="form">
 
-            <form name="contact" method="post" data-netlify="true">
-                <h2>Kontakt</h2>
-                <p>
-                    <label>Voller Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label>EMail Adresse: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Betref: <input type="text" name="subject"></label>
-                </p>
-                <p id="formMessageDiv">
-                    <label>Nachricht: <textarea id="formMessage" name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Absenden</button>
-                </p>
-            </form>
-        </div>
+                <form name="contact" method="post" data-netlify="true">
+                    <h2>Kontakt</h2>
+                    <p>
+                        <label>Voller Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>EMail Adresse: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Betref: <input type="text" name="subject"></label>
+                    </p>
+                    <p id="formMessageDiv">
+                        <label>Nachricht: <textarea id="formMessage" name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Absenden</button>
+                    </p>
+                </form>
+            </div>
         </main>
 
         <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
