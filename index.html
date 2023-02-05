@@ -2,7 +2,6 @@
 <html lang="de-DE">
 
 <head>
-    <meta http-equiv="refresh" content="0; URL=./under-construction.html">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,57 +39,35 @@
 
 </head>
 
-<body>
-
-    <!-- ----------------------------------------- [CONTEXT MENU] ----------------------------------------- -->
-    <div id="context-menu">
-        <div class="item-title" id="context-menu-title">
-            <i></i>
-            <h1>Schnellwahl:</h1>
-        </div>
-        <div class="item" id="context-menu-home" onmouseleave="contextMenuHome_notActive()"
-            onmouseenter="contextMenuHome_active()">
-            <a href="https://www.nicoproyer.at"><i class="fa-solid fa-house"></i>Home</a>
-        </div>
-        <div class="item" id="context-menu-contact" onmouseleave="contextMenuContact_notActive()"
-            onmouseenter="contextMenuContact_active()">
-            <a href="/kontakt.html"><i class="fa-solid fa-address-book"></i>Kontakt</a>
-        </div>
-        <div class="item" id="context-menu-link" onmouseleave="contextMenuLinks_notActive()"
-            onmouseenter="contextMenuLinks_active()">
-            <a href="/link.html"><i class="fa-solid fa-link"></i>Links</a>
-        </div>
-        <div id="context-menu-datenschutz" class="item">
-            <a id="item-datasafety-lock-open" href="/datenschutz.html"><i
-                    class="fa-solid fa-lock-open"></i>Datenschutz</a>
-            <a id="item-datasafety-lock-closed" href="/datenschutz.html"><i class="fa-solid fa-lock"></i>Datenschutz</a>
-        </div>
-    </div>
-
+<body id="body">
     <div>
 
+        <div id="load" class="load">
 
+            <img src="./img/Spinner-1s-200px.svg" alt="Ladebalken">
+
+        </div>
 
         <!-- ----------------------------------------- [DEVICE ERROR] ----------------------------------------- -->
         <h1 id="sizeError">
             Error, your Device doesn't support the website.
-            Error: Width is not supported. Please get a device, with a larger display.
+            Error: Width is not supported. Please use a device, with a larger display.
         </h1>
 
         <!-- ----------------------------------------- [NAVBAR] ----------------------------------------- -->
         <div id="content">
             <nav class="navbar">
                 <div class="brand-title"><a href="index.html">nicoproyer.at</a></div>
-                <a href="#" onclick="toogleNavbar()" class="toggle-button">
+                <a href="#" id="toogle-button" class="toggle-button">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </a>
-                <div class="navbar-links">
+                <div id="navbar-links" class="navbar-links">
                     <ul>
-                        <li class="navbar-links"><a href="/index.html">Startseite</a></li>
-                        <li class="navbar-links"><a href="/datenschutz.html">Datenschutz</a></li>
-                        <li class="navbar-links"><a href="/kontakt.html">Kontakt</a></li>
+                        <li class="navbar-link"><a href="/index.html">Startseite</a></li>
+                        <li class="navbar-link"><a href="/datenschutz.html">Datenschutz</a></li>
+                        <li class="navbar-link"><a href="/kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
@@ -101,11 +78,13 @@
             <main>
 
                 <!-- ----------------------------------------- [Datasafety] ----------------------------------------- -->
-                <div style="background:aqua; border-radius: 50%; width: 5rem; height: 5rem; position:absolute; right: 10px; bottom: 10px;"
-                    class="datasafety">
-                    <a href="./datenschutz.html"><img
-                            style="width: 4rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
-                            src="/img/Fingerprint.png" alt="Fingerabdruck"></a>
+                <div class="datasafety-div">
+                    <div style="z-index: 1; background:aqua; border-radius: 50%; width: 5rem; height: 5rem; position:sticky; right: 10px; bottom: 10px;"
+                        class="datasafety">
+                        <a href="./datenschutz.html"><img
+                                style="width: 4rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                                src="/img/Fingerprint.png" alt="Fingerabdruck"></a>
+                    </div>
                 </div>
 
 
@@ -133,6 +112,8 @@
                             <div class="introductionTextLeftCard">
                                 <img src="/img/picture_png.png" alt="Ein Bild von einer Nico ähnlich sehenden Figur.">
                                 <h1>Nico Proyer</h1>
+                                <div class="name-bar">
+                                </div>
                                 <h4>Schüler</h2>
                                     <div class="introductionTextLeftCardLink">
                                         <a class="introductionTextLeftCardLinkSingle"

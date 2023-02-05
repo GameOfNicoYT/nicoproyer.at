@@ -1,35 +1,42 @@
-*{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------- [GENERAL] ---------------*/
 
 body {
     backdrop-filter: blur(5px);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
+
+
+    transition: all 0.5s ease;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+/*--------------- [Load] ---------------*/
+
+.load {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #bde4f2;
+}
+
+.hide {
+    top: -100vh;
 }
 
 /*--------------- [ERROR] ---------------*/
@@ -43,6 +50,7 @@ html{
 /*--------------- [HEADER] ---------------*/
 
 .navbar {
+    z-index: 4;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -179,10 +187,18 @@ html{
     }
 
     .navbar-links.active {
+        position: relative;
         display: flex;
+        height: auto;
     }
 }
 
+.datasafety-div {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+}
 
 
 /*--------------- [FOOTER] ---------------*/
@@ -196,7 +212,7 @@ html{
 .Footer {
     background-color: #3f3c3c;
     padding: 70px 0;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .container {
@@ -359,8 +375,6 @@ main {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    text-transform: capitalize;
-
 }
 
 #greetingImageWithText_CSS {
@@ -371,6 +385,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease;
+    padding: 0;
 }
 
 #greetingImageWithText_CSS_TEXT {
@@ -392,10 +407,10 @@ main {
 
 #greetingImageWithText_CSS:hover {
     position: absolute;
-    bottom: 27%;
+    bottom: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: 40px;
+    padding-top: 30px;
+
 }
 
 #greetingImageWithText_arrow {
@@ -420,6 +435,7 @@ main {
 }
 
 .introduction {
+    scroll-snap-align: start;
     display: flex;
     height: 100vh;
 }
@@ -427,6 +443,7 @@ main {
 .introductionTextLeft {
     width: 45%;
     background-color: #3f3f3f;
+
 }
 
 .introductionTextRight {
@@ -442,17 +459,20 @@ main {
 
 .introductionTextLeftCard img {
     width: 150px;
-    transform: translate(50%, 10%);
 }
 
 .introductionTextLeftCard {
     width: 300px;
-    height: 430px;
     background-color: rgba(146, 146, 146, 0.897);
     transform: translate(0%, 30%);
     margin-left: auto;
     margin-right: -30px;
+    padding: 15px;
     box-shadow: -5px 5px 5px rgba(90, 90, 90, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .introductionTextLeftCard h1 {
@@ -460,16 +480,12 @@ main {
     font-size: 3rem;
 }
 
-.introductionTextLeftCard h1::before {
-    content: " ";
-    height: 2px;
-    width: 212px;
-    position: absolute;
-    background-color: #00ffff;
-    top: 230px;
+.name-bar {
+    width: 50%;
+    height: 3px;
+    background-color: aqua;
+    border-radius: 5px;
 }
-
-
 
 @media (max-width: 1200px) {
     .greetingImageWithText_TEXT {
@@ -602,7 +618,7 @@ main {
 .introductionTextLeftCardLink {
     display: flex;
     justify-content: center;
-    transform: translate(0%, 150%);
+    padding-top: 50px;
     width: 100%;
 }
 
@@ -833,4 +849,12 @@ body {
     display: inline-block;
     margin-top: 260px;
 
+}
+
+* {
+    transition: all 0.5s ease;
+}
+
+body {
+    scroll-snap-type: y mandatory;
 }
