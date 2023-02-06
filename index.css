@@ -437,20 +437,26 @@ main {
 .introduction {
     scroll-snap-align: start;
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
 }
 
 .introductionTextLeft {
+    height: 100vh;
     width: 45%;
     background-color: #3f3f3f;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .introductionTextRight {
     width: 45%;
-    margin-left: 5%;
-    margin-top: 50vh;
-    transform: translate(0%, -50%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .introductionTextRight p {
@@ -463,8 +469,7 @@ main {
 
 .introductionTextLeftCard {
     width: 300px;
-    background-color: rgba(146, 146, 146, 0.897);
-    transform: translate(0%, 30%);
+    background: rgba(146, 146, 146, 0.897);
     margin-left: auto;
     margin-right: -30px;
     padding: 15px;
@@ -550,7 +555,7 @@ main {
     }
 
     .introduction {
-        display: block;
+        flex-direction: column;
     }
 
     .introductionTextLeft {
@@ -568,24 +573,15 @@ main {
 
     .introductionTextRight {
         width: 90%;
-        transform: translate(0, -95%);
-        height: 450px;
-        margin-right: 5px;
-        margin-bottom: 500px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .greetingImageWithText {
         display: none;
-    }
-
-    .introductionTextRight h1 {
-        position: absolute;
-        transform: translate(0px, 30px);
-    }
-
-    .introductionTextRight p {
-        position: absolute;
-        transform: translate(0, 140px);
     }
 }
 
