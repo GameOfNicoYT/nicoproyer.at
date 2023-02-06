@@ -1,9 +1,6 @@
 /*--------------- [GENERAL] ---------------*/
 
 body {
-    backdrop-filter: blur(5px);
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     overflow: hidden;
 }
 
@@ -53,6 +50,7 @@ html {
     z-index: 4;
     display: flex;
     position: relative;
+    top: -500px;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
@@ -435,7 +433,6 @@ main {
 }
 
 .introduction {
-    scroll-snap-align: start;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -849,8 +846,4 @@ body {
 
 * {
     transition: all 0.5s ease;
-}
-
-body {
-    scroll-snap-type: y mandatory;
 }

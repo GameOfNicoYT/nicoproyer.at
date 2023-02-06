@@ -29,6 +29,12 @@ function warn() {
 window.addEventListener('load', () => {
     const loadingBar = document.getElementById("load");
     const body = document.getElementById("body")
-    body.style.overflow = "auto"
-    loadingBar.style.top = "-100vh"
+    const navbar = document.getElementById("navbar")
+    window.location.href = "./index.html#body";
+    navbar.style.top = "0"
+    setTimeout(() => {
+        body.style.overflow = "auto"
+        loadingBar.style.top = "-100vh"
+    }, 500);
+
 })
