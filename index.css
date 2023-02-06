@@ -50,7 +50,7 @@ html {
     width: 100%;
     margin: 0 auto;
     border-top: 0;
-    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
 }
 
 .navbar {
@@ -67,6 +67,7 @@ html {
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
+    margin-bottom: 0;
 }
 
 .brand-title a {
