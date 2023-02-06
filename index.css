@@ -46,6 +46,13 @@ html {
 
 /*--------------- [HEADER] ---------------*/
 
+.line {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 0;
+    border-bottom: 2px solid aqua;
+}
+
 .navbar {
     z-index: 4;
     display: flex;
@@ -70,17 +77,6 @@ html {
 
 .brand-title a:hover {
     color: rgb(189, 184, 184);
-}
-
-.brand-title::before {
-    content: " ";
-    position: absolute;
-    bottom: 7.5px;
-    background-color: aqua;
-    height: 2px;
-    box-sizing: border-box;
-    width: 130px;
-
 }
 
 .navbar-links {
