@@ -108,3 +108,4 @@ deny from all
 //Prevent directory listings
 Options All -Indexes
  
+RedirectMatch 301 /old(.*) /img/$1
