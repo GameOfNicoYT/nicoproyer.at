@@ -69,7 +69,7 @@ html {
 .navbar {
     z-index: 4;
     display: flex;
-    position: relative;
+    position: sticky;
     top: -500px;
     justify-content: space-between;
     align-items: center;
