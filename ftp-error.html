@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTP Access - Denied</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: grey;
+      }
+
+      .card,
+      .top,
+      .bottom {
+        padding: 10px;
+        background-color: silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="top">
+          <h1>Access denied: 403</h1>
+        </div>
+        <div class="bottom">
+          <h1>FTP - Access is not allowed from your IP</h1>
+          <p>
+            Please contact an administrator to whitelist your IP in the network
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
