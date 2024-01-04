@@ -473,11 +473,11 @@ main {
 
 .introductionTextLeftCard {
   width: 300px;
-  background: rgba(146, 146, 146, 0.897);
+  background: rgb(146, 146, 146);
   margin-left: auto;
   margin-right: -30px;
   padding: 15px;
-  box-shadow: -5px 5px 5px rgba(90, 90, 90, 0.8);
+  box-shadow: -5px 5px 5px rgb(90, 90, 90);
   display: flex;
   justify-content: center;
   align-items: center;
