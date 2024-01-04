@@ -1,152 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt | nicoproyer.at</title>
-    <link rel="shortcut icon" href="/img/picture_png.png">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="shortcut icon" href="/img/picture_png.png" />
+    <link rel="stylesheet" href="/index.css" />
     <script src="/index.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://kit.fontawesome.com/9a89a60d4e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9a89a60d4e.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" />
     <!-- ------------------------------ GOOGLE AD & ANALYTICS ------------------------------ -->
 
     <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMQSEP9260">
-    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VMQSEP9260"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-VMQSEP9260');
+      gtag("config", "G-VMQSEP9260");
     </script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ----------------------------------------- [CONTEXT MENU] ----------------------------------------- -->
     <div id="context-menu">
-        <div class="item-title" id="context-menu-title">
-            <i></i>
-            <h1>Schnellwahl:</h1>
-        </div>
-        <div class="item" id="context-menu-home" onmouseleave="contextMenuHome_notActive()"
-            onmouseenter="contextMenuHome_active()">
-            <a href="https://www.nicoproyer.at"><i class="fa-solid fa-house"></i>Home</a>
-        </div>
-        <div class="item" id="context-menu-contact" onmouseleave="contextMenuContact_notActive()"
-            onmouseenter="contextMenuContact_active()">
-            <a href="/kontakt.html"><i class="fa-solid fa-address-book"></i>Kontakt</a>
-        </div>
-        <div class="item" id="context-menu-link" onmouseleave="contextMenuLinks_notActive()"
-            onmouseenter="contextMenuLinks_active()">
-            <a href="/link.html"><i class="fa-solid fa-link"></i>Links</a>
-        </div>
-        <div id="context-menu-datenschutz" class="item">
-            <a id="item-datasafety-lock-open" href="/datenschutz.html"><i
-                    class="fa-solid fa-lock-open"></i>Datenschutz</a>
-            <a id="item-datasafety-lock-closed" href="/datenschutz.html"><i class="fa-solid fa-lock"></i>Datenschutz</a>
-        </div>
+      <div class="item-title" id="context-menu-title">
+        <i></i>
+        <h1>Schnellwahl:</h1>
+      </div>
+      <div
+        class="item"
+        id="context-menu-home"
+        onmouseleave="contextMenuHome_notActive()"
+        onmouseenter="contextMenuHome_active()"
+      >
+        <a href="https://www.nicoproyer.at"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div
+        class="item"
+        id="context-menu-contact"
+        onmouseleave="contextMenuContact_notActive()"
+        onmouseenter="contextMenuContact_active()"
+      >
+        <a href="/kontakt.html"
+          ><i class="fa-solid fa-address-book"></i>Kontakt</a
+        >
+      </div>
+      <div
+        class="item"
+        id="context-menu-link"
+        onmouseleave="contextMenuLinks_notActive()"
+        onmouseenter="contextMenuLinks_active()"
+      >
+        <a href="/link.html"><i class="fa-solid fa-link"></i>Links</a>
+      </div>
+      <div id="context-menu-datenschutz" class="item">
+        <a id="item-datasafety-lock-open" href="/datenschutz.html"
+          ><i class="fa-solid fa-lock-open"></i>Datenschutz</a
+        >
+        <a id="item-datasafety-lock-closed" href="/datenschutz.html"
+          ><i class="fa-solid fa-lock"></i>Datenschutz</a
+        >
+      </div>
     </div>
 
-    <div>
+    <!-- ----------------------------------------- [DEVICE ERROR] ----------------------------------------- -->
+    <h1 id="sizeError">
+      Error, your Device doesn't support the website. Error: Width is not
+      supported. Please get a device, with a larger display.
+    </h1>
 
-
-
-        <!-- ----------------------------------------- [DEVICE ERROR] ----------------------------------------- -->
-        <h1 id="sizeError">
-            Error, your Device doesn't support the website.
-            Error: Width is not supported. Please get a device, with a larger display.
-        </h1>
-
-        <!-- ----------------------------------------- [NAVBAR] ----------------------------------------- -->
-        <div id="content">
-            <nav class="navbar">
-                <div class="brand-title"><a href="index.html">nicoproyer.at</a></div>
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <div class="navbar-links">
-                    <ul>
-                        <li class="navbar-links"><a href="/index.html">Startseite</a></li>
-                        <li class="navbar-links"><a href="/datenschutz.html">Datenschutz</a></li>
-                        <li class="navbar-links"><a href="/kontakt.html">Kontakt</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <!-- ----------------------------------------- [NAVBAR] ----------------------------------------- -->
+    <div id="content">
+      <nav class="navbar">
+        <div class="brand-title"><a href="index.html">nicoproyer.at</a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li class="navbar-links"><a href="/index.html">Startseite</a></li>
+            <li class="navbar-links">
+              <a href="/datenschutz.html">Datenschutz</a>
+            </li>
+            <li class="navbar-links"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
+      </nav>
+    </div>
 
-        <!-- ----------------------------------------- [FORM] ----------------------------------------- -->
+    <!-- ----------------------------------------- [FORM] ----------------------------------------- -->
 
-        <main>
-            <div class="form">
+    <main>
+      <div class="form">
+        <div style="position: absolute; z-index: 99; width: 100%">
+          <img
+            style="width: 100%; opacity: 95%"
+            src="./img/stop.png"
+            alt="stop"
+          />
+        </div>
+        <form name="contact" method="post" data-netlify="true">
+          <h2>Kontakt</h2>
+          <p>
+            <label
+              >Voller Name: <input type="text" name="name" disabled
+            /></label>
+          </p>
+          <p>
+            <label
+              >EMail Adresse: <input type="email" name="email" disabled
+            /></label>
+          </p>
+          <p>
+            <label>Betref: <input type="text" name="subject" disabled /></label>
+          </p>
+          <p id="formMessageDiv">
+            <label
+              >Nachricht:
+              <textarea id="formMessage" name="message" disabled></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit" disabled>Absenden</button>
+          </p>
+        </form>
+      </div>
+      <p style="width: 100vw; text-align: center; font-size: 2rem">
+        Hier wird umgebaut, bitte Anfragen nur an
+        <a href="mailto: info@nicoproyer.at">info@nicoproyer.at</a> senden.
+        Danke!
+      </p>
+    </main>
 
-                <form name="contact" method="post" data-netlify="true">
-                    <h2>Kontakt</h2>
-                    <p>
-                        <label>Voller Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>EMail Adresse: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Betref: <input type="text" name="subject"></label>
-                    </p>
-                    <p id="formMessageDiv">
-                        <label>Nachricht: <textarea id="formMessage" name="message"></textarea></label>
-                    </p>
-                    <p>
-                        <button type="submit">Absenden</button>
-                    </p>
-                </form>
+    <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
+    <footer class="Footer">
+      <div class="container">
+        <div class="row">
+          <div class="footerCol">
+            <h4>Hilfe</h4>
+            <ul class="clickable">
+              <li><a href="mailto: info@nicoproyer.at">Support</a></li>
+              <li><a href="/kontakt.html">Kontakt</a></li>
+            </ul>
+            <h4>Impressum</h4>
+            <ul class="clickable">
+              <li><a href="/datenschutz.html">© nicoproyer.at 2019-2023</a></li>
+            </ul>
+          </div>
+          <div class="footerCol">
+            <h4>Folge mir</h4>
+            <div class="socialLinks">
+              <div class="socialLinksHover">
+                <a
+                  href="https://www.instagram.com/gameofnicoyt"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@nicoproyer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a
+                  href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
             </div>
-        </main>
-
-        <!-- ----------------------------------------- [FOOTER] ----------------------------------------- -->
-        <footer class="Footer">
-
-            <div class="container">
-                <div class="row">
-                    <div class="footerCol">
-                        <h4>Hilfe</h4>
-                        <ul class="clickable">
-                            <li><a href="mailto: info@nicoproyer.at">Support</a></li>
-                            <li><a href="/kontakt.html">Kontakt</a></li>
-                        </ul>
-                        <h4>Impressum</h4>
-                        <ul class="clickable">
-                            <li><a href="/datenschutz.html">© nicoproyer.at
-                                    2019-2023</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerCol">
-                        <h4>Folge mir</h4>
-                        <div class="socialLinks">
-                            <div class="socialLinksHover">
-                                <a href="https://www.instagram.com/gameofnicoyt" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/@nicoproyer" target="_blank"
-                                    rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
-                                <a href="https://https://www.youtube.com/channel/UCs3ZRAp-ofA3qxemmYuoGJA"
-                                    target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-</body>
-
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

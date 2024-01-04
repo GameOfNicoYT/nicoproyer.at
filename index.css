@@ -644,6 +644,8 @@ body {
   margin-top: 50px;
   transform: translate(75%);
   width: 40%;
+  overflow: hidden;
+  min-height: 50vh;
 }
 
 .form h2 {
