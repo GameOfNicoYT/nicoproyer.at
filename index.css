@@ -18,10 +18,13 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+.body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
-
   transition: all 0.5s ease;
 }
 
@@ -270,10 +273,7 @@ footer ul {
   font-weight: 300;
   color: #bbbbbb;
   display: block;
-  margin-bottom: 5px;
   transition: all 0.3s ease;
-  margin-top: -15px;
-  margin-bottom: 25px;
 }
 
 .footerCol ul.clickable li a:hover {
