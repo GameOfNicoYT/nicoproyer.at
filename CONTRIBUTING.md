@@ -1,0 +1,1 @@
+If you want to contribute on my Website, please fork this repo and show me your ideas. Every Pull Request will be looked at and be treated with the same respect and pacience. Feel free to share your ideas!
