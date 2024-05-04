@@ -64,6 +64,24 @@ const chance = Math.floor(Math.random() * 2);
 
 console.log(chance);
 
+function isCookieSet(cookieName) {
+  // Encode the cookie name to handle special characters
+  var encodedCookieName = encodeURIComponent(cookieName) + "=";
+  var cookies = document.cookie.split(";"); // Teile den Cookie-String in einzelne Cookies
+
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim(); // Entferne Leerzeichen am Anfang/Ende
+    if (cookie.indexOf(encodedCookieName) === 0) {
+      return true; // Cookie gefunden
+    }
+  }
+  return false; // Cookie nicht gefunden
+}
+
+if (isCookieSet("newdesign")) {
+  window.location.href = "https://test.nicoproyer.at?dialogue=true";
+}
+
 if (chance == 1) {
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
