@@ -59,3 +59,11 @@ window.addEventListener("load", () => {
     loadingBar.style.top = "-100vh";
   }, 500);
 });
+
+const chance = Math.floor(Math.random() * 2);
+
+console.log(chance);
+
+if (chance == 1) {
+  window.location.href = "https://test.nicoproyer.at?dialogue=true";
+}

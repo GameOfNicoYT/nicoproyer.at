@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../index.css">
+  </head>
+  <body>
+  <header>
+    <h1 id="sizeError">
+      Error, your Device doesn't support the website.
+      Error: Width is not supported. Please use a device, with a larger display.
+  </h1>
+
+  <!-- ----------------------------------------- [NAVBAR] ----------------------------------------- -->
+  <div id="content">
+      <nav id="navbar" class="navbar">
+          <div>
+              <div class="brand-title"><a href="index">nicoproyer.at</a></div>
+              <hr class="line">
+          </div>
+          <a href="#" id="toogle-button" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+          <div id="navbar-links" class="navbar-links">
+              <ul>
+                  <li class="navbar-link"><a href="/index">Startseite</a></li>
+                  <li class="navbar-link"><a href="/datenschutz">Datenschutz</a></li>
+                  <li class="navbar-link"><a href="/kontakt">Kontakt</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+    <main>
+      <!-- ------------- MAIN CONTENT ------------------ -->
+      <form class="login disabled" action="https://api.nicoproyer.at/adminLogin" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" disabled />
+        <label for="passwort">Passwort:</label>
+        <input type="password" disabled/>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="footerCol">
+                <h4>Hilfe</h4>
+                <ul class="clickable">
+                    <li><a href="mailto: info@nicoproyer.at">Support</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+                <h4>Impressum</h4>
+                <ul class="clickable">
+                    <li><a href="/datenschutz">© nicoproyer.at
+                            2019-2023</a></li>
+                </ul>
+                <h4>Seiten</h4>
+                <ul class="clickable">
+                    <li><a href="/index">Startseite</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                    <li><a href="/datenschutz">Datenschutz</a></li>
+                    <li><a href="/link">Links</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h4>Folge mir</h4>
+                <div class="socialLinks">
+                    <div class="socialLinksHover">
+                        <a href="https://www.instagram.com/gameofnicoyt" target="_blank"
+                            rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@nicoproyer" target="_blank"
+                            rel="noreferrer noopener"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@GameOfNicoYT" target="_blank"
+                            rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>
