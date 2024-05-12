@@ -88,6 +88,7 @@ function checkCookieFalse(cookieName) {
 }
 
 if (!checkCookieFalse("newdesign")) {
+  console.log("new design");
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
 
