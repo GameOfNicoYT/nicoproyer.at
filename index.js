@@ -78,7 +78,16 @@ function isCookieSet(cookieName) {
   return false; // Cookie nicht gefunden
 }
 
-if (isCookieSet("newdesign")) {
+function checkCookieFalse(cookieName) {
+  var cookieValue = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith(cookieName + "="))
+    .split("=")[1];
+
+  return cookieValue === "false";
+}
+
+if (!checkCookieFalse("newdesign")) {
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
 
