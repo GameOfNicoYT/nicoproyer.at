@@ -95,3 +95,13 @@ if (!checkCookieFalse("newdesign")) {
 if (chance == 1 && !checkCookieFalse("newdesign")) {
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
+
+function newdesign() {
+  var expires = "";
+  var date = new Date();
+  date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
+  expires = "; expires=" + date.toUTCString();
+  document.cookie =
+    "newdesign=true" + expires + "; path=/;domain=.nicoproyer.at;";
+  window.location.href = "https://test.nicoproyer.at";
+}

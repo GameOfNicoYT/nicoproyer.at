@@ -853,3 +853,14 @@ body {
 * {
   transition: all 0.5s ease;
 }
+
+.btn-new-design{
+  cursor: pointer;
+  color: white;
+  width: 200px;
+  height: 50px;
+  background: #494949;
+  border-radius: 5px;
+  border: 0;
+  font-size: 12px;
+}
