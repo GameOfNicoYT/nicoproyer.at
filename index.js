@@ -92,6 +92,6 @@ if (!checkCookieFalse("newdesign")) {
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
 
-if (chance == 1) {
+if (chance == 1 && !checkCookieFalse("newdesign")) {
   window.location.href = "https://test.nicoproyer.at?dialogue=true";
 }
